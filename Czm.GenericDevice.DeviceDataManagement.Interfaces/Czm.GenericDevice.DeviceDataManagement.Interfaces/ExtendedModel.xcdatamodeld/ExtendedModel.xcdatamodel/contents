@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14460.32" systemVersion="18B75" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="EncapsulatedPdf" representedClassName="EncapsulatedPdf" syncable="YES">
+        <attribute name="conversionType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="documentTitle" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="encapsulatedPdfKey" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="key" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="mimeType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pdfDicomFile" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pdfFile" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pdfType" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="ExamMeasurement" representedClassName="ExamMeasurement" syncable="YES">
+        <attribute name="key" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="measurementKey" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="ExtendedExam" representedClassName="ExtendedExam" syncable="YES">
+        <attribute name="deviceExamKey" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="duration" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="examType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="image" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="key" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="enPdf" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="EncapsulatedPdf" syncable="YES"/>
+        <relationship name="measurement" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ExamMeasurement" syncable="YES"/>
+        <relationship name="rawExam" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="RawExam" syncable="YES"/>
+    </entity>
+    <entity name="ExtendedPatient" representedClassName="ExtendedPatient" syncable="YES">
+        <attribute name="devicePatientKey" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="eyeColor" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="height" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="RawExam" representedClassName="RawExam" syncable="YES">
+        <attribute name="exExamKey" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fileName" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="EncapsulatedPdf" positionX="102.62109375" positionY="-159.23828125" width="128" height="165"/>
+        <element name="ExtendedExam" positionX="166.86328125" positionY="-352.515625" width="128" height="163"/>
+        <element name="ExtendedPatient" positionX="-99.63671875" positionY="-255.09765625" width="128" height="90"/>
+        <element name="ExamMeasurement" positionX="-85.8203125" positionY="-103.58984375" width="128" height="88"/>
+        <element name="RawExam" positionX="229.5234375" positionY="27.19921875" width="128" height="73"/>
+    </elements>
+</model>

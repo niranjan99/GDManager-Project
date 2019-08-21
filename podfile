@@ -1,0 +1,67 @@
+
+
+
+platform :ios, '10.0'
+use_frameworks!
+
+
+target 'GenericDeviceUI' do
+  workspace 'SQATestAPP.xcworkspace'
+  project 'GenericDeviceUI/GenericDeviceUI.xcodeproj'
+  pod 'CocoaLumberjack/Swift'
+  pod 'Swinject', '2.1.1'
+#  pod 'SwinjectAutoregistration', '2.1.1'
+#  pod 'SwinjectStoryboard'
+
+end
+
+target 'Czm.GenericDevice.Infrastructure' do
+  workspace 'SQATestAPP.xcworkspace'
+  project 'Czm.GenericDevice.Infrastructure/Czm.GenericDevice.Infrastructure.xcodeproj'
+   pod 'CocoaLumberjack/Swift'
+#   pod 'Swinject'
+end
+
+target 'Czm.GenericDevice.InfrastructureServices' do
+  workspace 'SQATestAPP.xcworkspace'
+  project 'Czm.GenericDevice.InfrastructureServices/Czm.GenericDevice.InfrastructureServices.xcodeproj'
+  pod 'Swinject', '2.1.1'
+#  pod 'SwinjectAutoregistration', '2.1.1'
+#  pod 'SwinjectStoryboard'
+
+end
+
+target 'Czm.GenericDevice.InfrastructureServices.Interfaces' do
+  workspace 'SQATestAPP.xcworkspace'
+  project 'Czm.GenericDevice.InfrastructureServices.Interfaces/Czm.GenericDevice.InfrastructureServices.Interfaces.xcodeproj'
+  pod 'Swinject', '2.1.1'
+#  pod 'SwinjectAutoregistration', '2.1.1'
+#  pod 'SwinjectStoryboard'
+
+end
+
+
+target 'Czm.GenericDevice.SettingsManagement' do
+  workspace 'SQATestAPP.xcworkspace'
+  project 'Czm.GenericDevice.SettingsManagement/Czm.GenericDevice.SettingsManagement.xcodeproj'
+  pod 'Swinject', '2.1.1'
+#  pod 'SwinjectAutoregistration', '2.1.1'
+#  pod 'SwinjectStoryboard'
+end
+
+
+target 'Czm.GenericDevice.DependencyInjector' do
+  workspace 'SQATestAPP.xcworkspace'
+  project 'Czm.GenericDevice.DependencyInjector/Czm.GenericDevice.DependencyInjector.xcodeproj'
+  pod 'Swinject', '2.1.1'
+  #  pod 'SwinjectAutoregistration', '2.1.1'
+  #  pod 'SwinjectStoryboard'
+end
+
+target 'Czm.GenericDevice.DependencyInjector.Interfaces' do
+  workspace 'SQATestAPP.xcworkspace'
+  project 'Czm.GenericDevice.DependencyInjector.Interfaces/Czm.GenericDevice.DependencyInjector.Interfaces.xcodeproj'
+  pod 'Swinject', '2.1.1'
+  #  pod 'SwinjectAutoregistration', '2.1.1'
+  #  pod 'SwinjectStoryboard'
+end

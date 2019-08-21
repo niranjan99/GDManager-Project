@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:GenericDeviceUI/GenericDeviceUI.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Czm.GenericDevice.DependencyInjector/Czm.GenericDevice.DependencyInjector.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Czm.GenericDevice.DependencyInjector.Interfaces/Czm.GenericDevice.DependencyInjector.Interfaces.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Czm.GenericDevice.EventBroker.Interfaces/Czm.GenericDevice.EventBroker.Interfaces.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Czm.GenericDevice.CryptoServices.Interfaces/Czm.GenericDevice.CryptoServices.Interfaces.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Czm.GenericDevice.SettingsManagement.Interfaces/Czm.GenericDevice.SettingsManagement.Interfaces.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Czm.GenericDevice.CryptoServices/Czm.GenericDevice.CryptoServices.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Czm.GenericDevice.EventBroker/Czm.GenericDevice.EventBroker.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Czm.GenericDevice.SettingsManagement/Czm.GenericDevice.SettingsManagement.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Czm.GenericDevice.InfrastructureServices.Interfaces/Czm.GenericDevice.InfrastructureServices.Interfaces.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Czm.GenericDevice.InfrastructureServices/Czm.GenericDevice.InfrastructureServices.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Czm.GenericDevice.DeviceDataManagement.Interfaces/Czm.GenericDevice.DeviceDataManagement.Interfaces.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Czm.GenericDevice.DeviceDataManagement/Czm.GenericDevice.DeviceDataManagement.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Czm.GenericDevice.Infrastructure.Interfaces/Czm.GenericDevice.Infrastructure.Interfaces.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Czm.GenericDevice.Infrastructure/Czm.GenericDevice.Infrastructure.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Czm.GenericDevice.DataManagement.Interfaces/Czm.GenericDevice.DataManagement.Interfaces.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Czm.GenericDevice.DataManagement/Czm.GenericDevice.DataManagement.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Czm.GenericDevice.DataBaseManagement.Interfaces/Czm.GenericDevice.DataBaseManagement.Interfaces.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Czm.GenericDevice.DataBaseManagement/Czm.GenericDevice.DataBaseManagement.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Pods/Pods.xcodeproj">
+   </FileRef>
+</Workspace>

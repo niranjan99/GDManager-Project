@@ -1,0 +1,5 @@
+#import <Foundation/Foundation.h>
+@interface PodsDummy_Pods_Czm_GenericDevice_DependencyInjector_Interfaces : NSObject
+@end
+@implementation PodsDummy_Pods_Czm_GenericDevice_DependencyInjector_Interfaces
+@end

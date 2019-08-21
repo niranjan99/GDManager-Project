@@ -1,0 +1,6 @@
+framework module Pods_GenericDeviceUI {
+  umbrella header "Pods-GenericDeviceUI-umbrella.h"
+
+  export *
+  module * { export * }
+}

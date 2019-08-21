@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14460.32" systemVersion="18B75" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="AlertDataObject" representedClassName="AlertDataObject" syncable="YES">
+        <attribute name="alertCode" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="descriptionParameters" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="occurrenceTime" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userName" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="CodeItem" representedClassName="CodeItem" syncable="YES">
+        <attribute name="key" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="meaning" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="schemeDesignator" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="schemeVersion" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="value" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Exam" representedClassName="Exam" syncable="YES">
+        <attribute name="acquisitionDate" optional="YES" attributeType="String" minValueString="0" maxValueString="255" syncable="YES"/>
+        <attribute name="acquisitionNumber" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="comments" optional="YES" attributeType="String" minValueString="0" maxValueString="255" syncable="YES"/>
+        <attribute name="contentDate" optional="YES" attributeType="String" minValueString="0" maxValueString="255" syncable="YES"/>
+        <attribute name="deleteOnShutdown" optional="YES" attributeType="String" minValueString="0" maxValueString="255" syncable="YES"/>
+        <attribute name="examKey" attributeType="String" syncable="YES"/>
+        <attribute name="instanceNumber" optional="YES" attributeType="String" minValueString="0" maxValueString="255" syncable="YES"/>
+        <attribute name="isArchived" optional="YES" attributeType="String" minValueString="0" maxValueString="255" syncable="YES"/>
+        <attribute name="isMetadata" optional="YES" attributeType="String" minValueString="0" maxValueString="255" syncable="YES"/>
+        <attribute name="isPrivateData" optional="YES" attributeType="String" minValueString="0" maxValueString="255" syncable="YES"/>
+        <attribute name="laterality" optional="YES" attributeType="String" minValueString="0" maxValueString="255" syncable="YES"/>
+        <attribute name="seriesKey" attributeType="String" syncable="YES"/>
+        <attribute name="sopClassUid" optional="YES" attributeType="String" minValueString="0" maxValueString="255" syncable="YES"/>
+        <attribute name="sopInstanceUid" optional="YES" attributeType="String" minValueString="0" maxValueString="255" syncable="YES"/>
+        <attribute name="storageCommitmentErrorCount" optional="YES" attributeType="String" minValueString="0" maxValueString="255" syncable="YES"/>
+        <attribute name="storageCommitted" optional="YES" attributeType="String" minValueString="0" maxValueString="255" syncable="YES"/>
+        <attribute name="xmlRetrieveData_XmlBlob" optional="YES" attributeType="String" minValueString="0" maxValueString="255" syncable="YES"/>
+        <relationship name="series" optional="YES" maxCount="1" deletionRule="No Action" destinationEntity="Series" syncable="YES"/>
+    </entity>
+    <entity name="Patient" representedClassName="Patient" syncable="YES">
+        <attribute name="birthDate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="comments" optional="YES" attributeType="String" minValueString="0" maxValueString="255" syncable="YES"/>
+        <attribute name="creationDate" optional="YES" attributeType="String" minValueString="0" maxValueString="255" syncable="YES"/>
+        <attribute name="ethnicGroup" optional="YES" attributeType="String" minValueString="0" maxValueString="255" syncable="YES"/>
+        <attribute name="familyName" optional="YES" attributeType="String" minValueString="0" maxValueString="255" syncable="YES"/>
+        <attribute name="familyName_Ideographic" optional="YES" attributeType="String" minValueString="0" maxValueString="255" syncable="YES"/>
+        <attribute name="familyName_Phonetic" optional="YES" attributeType="String" minValueString="0" maxValueString="255" syncable="YES"/>
+        <attribute name="givenName" optional="YES" attributeType="String" minValueString="0" maxValueString="255" syncable="YES"/>
+        <attribute name="givenName_Ideographic" optional="YES" attributeType="String" minValueString="0" maxValueString="255" syncable="YES"/>
+        <attribute name="givenName_Phonetic" optional="YES" attributeType="String" minValueString="0" maxValueString="255" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="String" minValueString="0" maxValueString="255" syncable="YES"/>
+        <attribute name="isInArchive" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="issuerOfPatientId" optional="YES" attributeType="String" minValueString="0" maxValueString="255" syncable="YES"/>
+        <attribute name="key" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="middleName" optional="YES" attributeType="String" minValueString="0" maxValueString="255" syncable="YES"/>
+        <attribute name="middleName_Ideographic" optional="YES" attributeType="String" minValueString="0" maxValueString="255" syncable="YES"/>
+        <attribute name="middleName_Phonetic" optional="YES" attributeType="String" minValueString="0" maxValueString="255" syncable="YES"/>
+        <attribute name="otherPatientIds" optional="YES" attributeType="String" minValueString="0" maxValueString="255" syncable="YES"/>
+        <attribute name="owner" attributeType="String" syncable="YES"/>
+        <attribute name="patientKey" attributeType="String" minValueString="0" maxValueString="255" syncable="YES"/>
+        <attribute name="prefix" optional="YES" attributeType="String" minValueString="0" maxValueString="255" syncable="YES"/>
+        <attribute name="prefix_Ideographic" optional="YES" attributeType="String" minValueString="0" maxValueString="255" syncable="YES"/>
+        <attribute name="prefix_Phonetic" optional="YES" attributeType="String" minValueString="0" maxValueString="255" syncable="YES"/>
+        <attribute name="sex" optional="YES" attributeType="String" minValueString="0" maxValueString="255" syncable="YES"/>
+        <attribute name="suffix" optional="YES" attributeType="String" minValueString="0" maxValueString="255" syncable="YES"/>
+        <attribute name="suffix_Ideographic" optional="YES" attributeType="String" minValueString="0" maxValueString="255" syncable="YES"/>
+        <attribute name="suffix_Phonetic" optional="YES" attributeType="String" minValueString="0" maxValueString="255" syncable="YES"/>
+        <relationship name="study" optional="YES" toMany="YES" deletionRule="No Action" destinationEntity="Study" syncable="YES"/>
+    </entity>
+    <entity name="RequestedAttribute" representedClassName="RequestedAttribute" syncable="YES">
+        <attribute name="key" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="requestedAttributeKey" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="requestedProcedureCodeKey" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="requestedProcedureComments" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="requestedProcedureDescription" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="requestedProcedureId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="scheduledProcedureStepDescription" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="scheduledProcedureStepId" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="codeItem" optional="YES" toMany="YES" deletionRule="No Action" destinationEntity="CodeItem" syncable="YES"/>
+    </entity>
+    <entity name="Series" representedClassName="Series" syncable="YES">
+        <attribute name="departmentName" optional="YES" attributeType="String" minValueString="0" maxValueString="255" syncable="YES"/>
+        <attribute name="deviceSerialNumber" optional="YES" attributeType="String" minValueString="0" maxValueString="255" syncable="YES"/>
+        <attribute name="institutionAddress" optional="YES" attributeType="String" minValueString="0" maxValueString="255" syncable="YES"/>
+        <attribute name="institutionName" optional="YES" attributeType="String" minValueString="0" maxValueString="255" syncable="YES"/>
+        <attribute name="isMetadata" optional="YES" attributeType="String" minValueString="0" maxValueString="255" syncable="YES"/>
+        <attribute name="lastCalibration" optional="YES" attributeType="String" minValueString="0" maxValueString="255" syncable="YES"/>
+        <attribute name="manufacturer" optional="YES" attributeType="String" minValueString="0" maxValueString="255" syncable="YES"/>
+        <attribute name="manufacturersModelName" optional="YES" attributeType="String" minValueString="0" maxValueString="255" syncable="YES"/>
+        <attribute name="number" optional="YES" attributeType="String" minValueString="0" maxValueString="255" syncable="YES"/>
+        <attribute name="performedProcedureStepStartDate" optional="YES" attributeType="String" minValueString="0" maxValueString="255" syncable="YES"/>
+        <attribute name="performingPhysician_FamilyName_Ideographic" optional="YES" attributeType="String" minValueString="0" maxValueString="255" syncable="YES"/>
+        <attribute name="performingPhysician_FamilyName_Phonetic" optional="YES" attributeType="String" minValueString="0" maxValueString="255" syncable="YES"/>
+        <attribute name="performingPhysician_GivenName" optional="YES" attributeType="String" minValueString="0" maxValueString="255" syncable="YES"/>
+        <attribute name="performingPhysician_GivenName_Ideographic" optional="YES" attributeType="String" minValueString="0" maxValueString="255" syncable="YES"/>
+        <attribute name="performingPhysician_GivenName_Phonetic" optional="YES" attributeType="String" minValueString="0" maxValueString="255" syncable="YES"/>
+        <attribute name="performingPhysician_MiddleName" optional="YES" attributeType="String" minValueString="0" maxValueString="255" syncable="YES"/>
+        <attribute name="performingPhysician_MiddleName_Ideographic" optional="YES" attributeType="String" minValueString="0" maxValueString="255" syncable="YES"/>
+        <attribute name="performingPhysician_MiddleName_Phonetic" optional="YES" attributeType="String" minValueString="0" maxValueString="255" syncable="YES"/>
+        <attribute name="performingPhysician_Prefix" optional="YES" attributeType="String" minValueString="0" maxValueString="255" syncable="YES"/>
+        <attribute name="performingPhysician_Prefix_Ideographic" optional="YES" attributeType="String" minValueString="0" maxValueString="255" syncable="YES"/>
+        <attribute name="performingPhysician_Prefix_Phonetic" optional="YES" attributeType="String" minValueString="0" maxValueString="255" syncable="YES"/>
+        <attribute name="performingPhysician_Suffix" optional="YES" attributeType="String" minValueString="0" maxValueString="255" syncable="YES"/>
+        <attribute name="performingPhysician_Suffix_Ideographic" optional="YES" attributeType="String" minValueString="0" maxValueString="255" syncable="YES"/>
+        <attribute name="performingPhysician_Suffix_Phonetic" optional="YES" attributeType="String" minValueString="0" maxValueString="255" syncable="YES"/>
+        <attribute name="seriesDate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="seriesid" attributeType="String" syncable="YES"/>
+        <attribute name="snstanceUid" optional="YES" attributeType="String" minValueString="0" maxValueString="255" syncable="YES"/>
+        <attribute name="softwareVersion" optional="YES" attributeType="String" minValueString="0" maxValueString="255" syncable="YES"/>
+        <attribute name="stationName" optional="YES" attributeType="String" minValueString="0" maxValueString="255" syncable="YES"/>
+        <attribute name="studyKey" attributeType="String" syncable="YES"/>
+        <attribute name="synchronizationFrameofReferenceUid" optional="YES" attributeType="String" minValueString="0" maxValueString="255" syncable="YES"/>
+        <relationship name="exam" optional="YES" toMany="YES" deletionRule="No Action" destinationEntity="Exam" syncable="YES"/>
+        <relationship name="study" optional="YES" maxCount="1" deletionRule="No Action" destinationEntity="Study" syncable="YES"/>
+    </entity>
+    <entity name="SopUid" representedClassName="SopUid" syncable="YES">
+        <attribute name="key" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="referencedSopClassUid" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="referencedSopInstanceUid" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Study" representedClassName="Study" syncable="YES">
+        <attribute name="accessionNumber" optional="YES" attributeType="String" minValueString="0" maxValueString="255" syncable="YES"/>
+        <attribute name="date" optional="YES" attributeType="String" minValueString="0" maxValueString="255" syncable="YES"/>
+        <attribute name="descriptiOn" optional="YES" attributeType="String" minValueString="0" maxValueString="255" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="String" minValueString="0" maxValueString="255" syncable="YES"/>
+        <attribute name="isMetadata" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="key" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="patientKey" attributeType="String" syncable="YES"/>
+        <attribute name="referringPhysician_FamilyName" optional="YES" attributeType="String" minValueString="0" maxValueString="255" syncable="YES"/>
+        <attribute name="referringPhysician_FamilyName_Ideographic" optional="YES" attributeType="String" minValueString="0" maxValueString="255" syncable="YES"/>
+        <attribute name="referringPhysician_FamilyName_Phonetic" optional="YES" attributeType="String" minValueString="0" maxValueString="255" syncable="YES"/>
+        <attribute name="referringPhysician_GivenName" optional="YES" attributeType="String" minValueString="0" maxValueString="255" syncable="YES"/>
+        <attribute name="referringPhysician_GivenName_Ideographic" optional="YES" attributeType="String" minValueString="0" maxValueString="255" syncable="YES"/>
+        <attribute name="referringPhysician_GivenName_Phonetic" optional="YES" attributeType="String" minValueString="0" maxValueString="255" syncable="YES"/>
+        <attribute name="referringPhysician_MiddleName" optional="YES" attributeType="String" minValueString="0" maxValueString="255" syncable="YES"/>
+        <attribute name="referringPhysician_MiddleName_Ideographic" optional="YES" attributeType="String" minValueString="0" maxValueString="255" syncable="YES"/>
+        <attribute name="referringPhysician_MiddleName_Phonetic" optional="YES" attributeType="String" minValueString="0" maxValueString="255" syncable="YES"/>
+        <attribute name="referringPhysician_Prefix" optional="YES" attributeType="String" minValueString="0" maxValueString="255" syncable="YES"/>
+        <attribute name="referringPhysician_Prefix_Ideographic" optional="YES" attributeType="String" minValueString="0" maxValueString="255" syncable="YES"/>
+        <attribute name="referringPhysician_Prefix_Phonetic" optional="YES" attributeType="String" minValueString="0" maxValueString="255" syncable="YES"/>
+        <attribute name="referringPhysician_Suffix" optional="YES" attributeType="String" minValueString="0" maxValueString="255" syncable="YES"/>
+        <attribute name="referringPhysician_Suffix_Ideographic" optional="YES" attributeType="String" minValueString="0" maxValueString="255" syncable="YES"/>
+        <attribute name="referringPhysician_Suffix_Phonetic" optional="YES" attributeType="String" minValueString="0" maxValueString="255" syncable="YES"/>
+        <attribute name="studyInstanceUid" optional="YES" attributeType="String" minValueString="0" maxValueString="255" syncable="YES"/>
+        <attribute name="studyKey" attributeType="String" syncable="YES"/>
+        <relationship name="patient" optional="YES" maxCount="1" deletionRule="No Action" destinationEntity="Patient" syncable="YES"/>
+        <relationship name="series" optional="YES" toMany="YES" deletionRule="No Action" destinationEntity="Series" syncable="YES"/>
+    </entity>
+    <entity name="Visit" representedClassName="Visit" syncable="YES">
+        <attribute name="patientKey" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="visitDate" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="AlertDataObject" positionX="45" positionY="90" width="128" height="120"/>
+        <element name="CodeItem" positionX="27" positionY="72" width="128" height="120"/>
+        <element name="Exam" positionX="101.765625" positionY="-377.65625" width="128" height="313"/>
+        <element name="Patient" positionX="370.73046875" positionY="25.109375" width="128" height="465"/>
+        <element name="RequestedAttribute" positionX="27" positionY="72" width="128" height="180"/>
+        <element name="Series" positionX="-45" positionY="0" width="128" height="540"/>
+        <element name="SopUid" positionX="-18" positionY="27" width="128" height="90"/>
+        <element name="Study" positionX="232.8671875" positionY="196.015625" width="128" height="435"/>
+        <element name="Visit" positionX="163.61328125" positionY="1.359375" width="128" height="73"/>
+    </elements>
+</model>

@@ -1,0 +1,6 @@
+framework module Pods_Czm_GenericDevice_SettingsManagement {
+  umbrella header "Pods-Czm.GenericDevice.SettingsManagement-umbrella.h"
+
+  export *
+  module * { export * }
+}
