@@ -10,6 +10,7 @@
 		30401429F83E37FB7853383C /* Pods_GenericDeviceUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7063AAC702E99973628277AF /* Pods_GenericDeviceUI.framework */; };
 		922CCEC422572FED002AF0B4 /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 922CCEC322572FED002AF0B4 /* AppConfig.swift */; };
 		922CCEC62257585E002AF0B4 /* PatientModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 922CCEC52257585E002AF0B4 /* PatientModel.swift */; };
+		923F7BDB230EA22700E87F60 /* Dicom.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 923F7BD5230E9C0600E87F60 /* Dicom.framework */; };
 		924CD5272244A4AF00170C8C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924CD5262244A4AF00170C8C /* AppDelegate.swift */; };
 		924CD5292244A4AF00170C8C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924CD5282244A4AF00170C8C /* ViewController.swift */; };
 		924CD52C2244A4AF00170C8C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 924CD52A2244A4AF00170C8C /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 		7063AAC702E99973628277AF /* Pods_GenericDeviceUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GenericDeviceUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		922CCEC322572FED002AF0B4 /* AppConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
 		922CCEC52257585E002AF0B4 /* PatientModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PatientModel.swift; sourceTree = "<group>"; };
+		923F7BD5230E9C0600E87F60 /* Dicom.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Dicom.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		924CD5232244A4AF00170C8C /* GenericDeviceUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GenericDeviceUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		924CD5262244A4AF00170C8C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		924CD5282244A4AF00170C8C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -50,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				923F7BDB230EA22700E87F60 /* Dicom.framework in Frameworks */,
 				30401429F83E37FB7853383C /* Pods_GenericDeviceUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -60,6 +63,7 @@
 		876D205AD5629BCB9CC737EB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				923F7BD5230E9C0600E87F60 /* Dicom.framework */,
 				7063AAC702E99973628277AF /* Pods_GenericDeviceUI.framework */,
 			);
 			name = Frameworks;
@@ -376,6 +380,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 527XE45ZDW;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = GenericDeviceUI/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -397,6 +402,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 527XE45ZDW;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = GenericDeviceUI/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (

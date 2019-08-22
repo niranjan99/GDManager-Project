@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "DicomTests.(testPacsConnection(DicomTests) -&gt; () -&gt; ()).(closure #2):DicomTests.swift">
+      </ContextState>
+      <ContextState
+         contextName = "DicomTests.testCreateConnectionObject() -&gt; ():DicomTests.swift">
+      </ContextState>
+      <ContextState
+         contextName = "DicomTests.testPacsConnection() -&gt; ():DicomTests.swift">
+      </ContextState>
+      <ContextState
+         contextName = "+[DicomObject createLocalDicom:mediaPath:dcmFilePath:mediaType:success:failure:]:DicomObject.mm">
+         <PersistentStrings>
+            <PersistentString
+               value = "sizeof(pixData)">
+            </PersistentString>
+            <PersistentString
+               value = "pixData">
+            </PersistentString>
+            <PersistentString
+               value = "(sizeof(pixData)/sizeof(char))">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

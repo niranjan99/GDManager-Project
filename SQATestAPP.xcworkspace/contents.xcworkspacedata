@@ -5,6 +5,9 @@
       location = "group:GenericDeviceUI/GenericDeviceUI.xcodeproj">
    </FileRef>
    <FileRef
+      location = "group:Dicom/Dicom.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:Czm.GenericDevice.DependencyInjector/Czm.GenericDevice.DependencyInjector.xcodeproj">
    </FileRef>
    <FileRef

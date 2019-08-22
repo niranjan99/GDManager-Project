@@ -32,16 +32,23 @@ import Czm_GenericDevice_Infrastructure
 import Czm_GenericDevice_EventBroker_Interfaces
 import Czm_GenericDevice_EventBroker
 import Czm_GenericDevice_DependencyInjector
+//import Czm_GenericDevice_Dicom
+import Dicom
+
+
 class ViewController: UIViewController {
     
     @IBOutlet var buttonCreate:UIButton!
     @IBOutlet var buttonCreateExam:UIButton!
     var savedPatientKey:String!
     var infrstucture = InfrastructureServices()
-
+    var dicomapi =  DicomApi()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         buttonCreateExam.isHidden = true
+        
+     //   dicomapi.createPatientModule("sf")
 //        let infra = iInfrastructureServices.self
 //       infrast.initialize()
 //        let settingscontainer = infrstucture.container.resolve(ISettingsContainer.self)
